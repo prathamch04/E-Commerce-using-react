@@ -24,7 +24,7 @@ function Slider() {
         <ChevronLeftIcon />
       </div>
       <div
-        className='h-full flex'
+        className='h-full flex transition-all'
         style={{ transform: `translateX(${slideIndex * -100}vw)` }}
       >
         {sliderItems.map((item, index) => (
@@ -52,3 +52,4 @@ function Slider() {
 }
 
 export default Slider;
+
