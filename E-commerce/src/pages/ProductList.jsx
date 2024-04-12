@@ -8,8 +8,6 @@ import Footer from "../components/Footer"
 function ProductList() {
   return (
     <div>
-      <Navbar />
-      <Announcement />
       <h1 className='text-2xl font-bold m-4'>Dresses</h1>
       <div className='flex justify-between m-4'>
         <div className='m-4 flex'>
@@ -44,7 +42,7 @@ function ProductList() {
       </div>
       <Products />
       <Newsletter />
-      <Footer />
+    
     </div>
   )
 }

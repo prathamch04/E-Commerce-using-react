@@ -26,9 +26,11 @@ function Navbar() {
           <div className='flex items-center gap-7 p-2 justify-end mr-4'>
             <NavLink to={'/register'}>REGISTER</NavLink>
             <NavLink to={'/signin'}>SIGN IN</NavLink>
+            <NavLink to={'/cart'}>
             <Badge badgeContent={4} color="success">
               <ShoppingCartOutlinedIcon />
             </Badge>
+            </NavLink>
           </div>
         </div>
       </div>
