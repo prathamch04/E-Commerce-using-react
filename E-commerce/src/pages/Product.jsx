@@ -25,7 +25,7 @@ function Product() {
                     <h1 className='text-3xl '>Rs.799</h1>
 
 
-                    <div className='flex justify-between items-center w-1/2 my-5'>
+                    <div className='flex justify-between items-center w-1/3 my-5'>
                         <div className='flex items-center'>
                             <div className="filter flex">
                                 <div className="filterTitle m-2">Color</div>
@@ -48,11 +48,11 @@ function Product() {
                             </select>
                         </div>
                     </div>
-                    <div className='flex items-center'>
-                        <div className='flex items-center'>
-                            <RemoveIcon />
-                            <div>1</div>
-                            <AddIcon />
+                    <div className='flex items-center w-1/3 justify-between'>
+                        <div className='flex items-center gap-2'>
+                            <RemoveIcon className='cursor-pointer' />
+                            <div className='font-bold'>1</div>
+                            <AddIcon className='cursor-pointer' />
                         </div>
                         <button className='border bg-gray-200'>ADD TO CART</button>
                     </div>
