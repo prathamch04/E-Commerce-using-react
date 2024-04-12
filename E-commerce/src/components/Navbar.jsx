@@ -2,6 +2,7 @@ import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import {NavLink} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -17,14 +18,14 @@ function Navbar() {
           </div>
         </div>
         <div className='flex w-1/3 cursor-pointer items-center justify-center'>
-          <span className='font-bold text-3xl'>
+          <NavLink to={'/'} className='font-bold text-3xl'>
             SHOP IT.
-          </span>
+          </NavLink>
         </div>
         <div className=' w-1/3 cursor-pointer items-center'>
           <div className='flex items-center gap-7 p-2 justify-end mr-4'>
-            <span>REGISTER</span>
-            <span>SIGN IN</span>
+            <NavLink to={'/register'}>REGISTER</NavLink>
+            <NavLink to={'/signin'}>SIGN IN</NavLink>
             <Badge badgeContent={4} color="success">
               <ShoppingCartOutlinedIcon />
             </Badge>

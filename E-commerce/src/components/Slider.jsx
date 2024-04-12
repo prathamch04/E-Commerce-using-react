@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { sliderItems } from '../data';
+import { Link } from 'react-router-dom';
 
 function Slider() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -32,10 +33,10 @@ function Slider() {
             <div className='h-full flex-1'>
               <img src={item.img} alt={item.title} className='ml-32 h-4/5' />
             </div>
-            <div className='flex-1 mr-16'>
+            <div className='flex-1 mr-16 h-1/2'>
               <h1 className='text-7xl'>{item.title}</h1>
               <p className='mt-8 text-xl tracking-widest'>{item.desc}</p>
-              <button className='bg-gray-300 mt-6 p-3 rounded-lg'>SHOP NOW</button>
+              <Link to={'/productlist'} className='bg-gray-300 absolute mt-8 p-3 rounded-lg'>SHOP NOW</Link>
             </div>
           </div>
         ))}
